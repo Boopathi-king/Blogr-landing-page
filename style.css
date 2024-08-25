@@ -428,4 +428,81 @@ footer .footer-box ul li a:hover{
     text-decoration: underline;
 }
 
-/* Responsive design */
+
+/* Mobile View */
+
+@media screen and (max-width: 768px) {
+    /* Header section */
+    .header {
+        padding: 2rem 1rem;
+        background-size: cover; /* Adjust if necessary */
+        background-position: center; /* Ensure background is centered */
+    }
+    .header .navigation {
+        flex-direction: column;
+        align-items: stretch; /* Ensures nav items span full width */
+    }
+    .header .navigation .site-nav {
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%; /* Ensure full width */
+    }
+    .header .navigation .site-nav li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 100%; /* Ensure full width */
+    }
+    .header .navigation .register {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+    .header .navigation .register li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    .header .header-content h1 {
+        font-size: 2.5rem;
+    }
+    .header .header-content p {
+        font-size: 1rem;
+    }
+    .description {
+        padding: 4rem 1rem;
+        text-align: center;
+    }
+    .description .description-content {
+        flex-direction: column;
+        align-items: center; /* Center content */
+    }
+    .description .description-content .description-content-leftcolumn,
+    .description .description-content .description-content-rightcolumn {
+        flex-basis: 100%;
+        text-align: center; /* Center text */
+    }
+    .services,
+    .features,
+    footer {
+        padding: 3rem 1rem;
+        flex-direction: column;
+    }
+    .features .features-leftcolumn, 
+    .features .features-rightcolumn,
+    .services .services-leftcolumn,
+    .services .services-rightcolumn {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer .footer-box {
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+    .header .navigation .site-nav li .dropdown-menu {
+        width: 100%; /* Ensure dropdown is full width */
+        position: relative; /* Ensure proper positioning */
+        margin: 0;
+        box-shadow: none; /* Adjust if needed */
+    }
+}
